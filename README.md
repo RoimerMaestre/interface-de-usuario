@@ -47,7 +47,7 @@ Este componente representa una carta de Pokémon individual.
 <li>poke: Un objeto que contiene la información del Pokémon.</li>
  </ul>
 
-## Data
+### Data
 
  <ul>
 <li>namePoke: Cadena que almacena el nombre del Pokémon ingresado por el usuario.</li>
@@ -55,21 +55,21 @@ Este componente representa una carta de Pokémon individual.
 
  </ul>
 
-## Computed
+### Computed
 
  <ul>
 <li>imagenPokemon(): Devuelve la URL de la imagen del Pokémon.</li>
 
  </ul>
 
-## Métodos
+### Métodos
 
  <ul>
 <li>handleSubmit(): Maneja la lógica cuando el usuario intenta adivinar el nombre del Pokémon.</li>
 
  </ul>
 
- ## NOTA
+ # NOTA
 Las cards muestra los primeros 20 pokemones de la api, se penso en usar una logica para que salieran al azar, sin embargo no se solicitaba y nos apegamos a la rubrica
 
 <!-- honestamente nos apoyamos en algunas partes con la IA, hemos tratado de hacer los desafios totalmente sin apoyo, pero nos ha costado demasiado, llamar a la api y renderizar la informacion no es tan complicado, pero la conexion de los props, con los metodos, componentes y todo mostralo en la app principal nos enrrolla demasiado.Cabe destacar que  si sabemos  y entendemos el codigo, hasta somos capaces de modificarlo y dar sus estilos correspondiente, la confusion proncipal para mi es como se conectan todas las cosas y encontrar un sentido logico a todo sin quedar atrapado -->
