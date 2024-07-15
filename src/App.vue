@@ -1,8 +1,12 @@
 <!-- App.vue -->
 <template>
   <div class="container">
-   <img src="../public/logo-poke.jpg" alt="logo-pokemon" class="logo-pokemon">
-   <h1>¿Quien es este pokemon?</h1>
+    <img
+      src="../public/logo-poke.jpg"
+      alt="logo-pokemon"
+      class="logo-pokemon"
+    />
+    <h1>¿Quien es este pokemon?</h1>
     <h2>Pokémon descubiertos: {{ pokemonsDescubiertos }}</h2>
 
     <div class="pokemones">
@@ -17,13 +21,13 @@
 </template>
 
 <script>
-import axios from 'axios';
-import CartaPokemon from './components/CartaPokemon.vue';
+import axios from "axios";
+import CartaPokemon from "./components/CartaPokemon.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    CartaPokemon
+    CartaPokemon,
   },
   data() {
     return {
@@ -52,16 +56,16 @@ export default {
     },
     incrementarContador() {
       this.pokemonsDescubiertos++;
-    }
+    },
   },
   async mounted() {
     this.pokemonList = await this.getPokemon();
-  }
+  },
 };
 </script>
 
 <style scoped>
-h1{
+h1 {
   text-align: center;
 }
 .pokemones {
@@ -70,11 +74,11 @@ h1{
   justify-content: center;
   gap: 20px;
 }
-.logo-pokemon{
+.logo-pokemon {
   width: 20rem;
   height: 15rem;
 }
-.container{
+.container {
   text-align: center;
 }
 </style>

@@ -2,7 +2,11 @@
 <template>
   <div class="carta-pokemon">
     <div class="pokemon-imagen">
-      <img :src="imagenPokemon" :alt="poke.name" :class="{ descubierto: descubierto }" />
+      <img
+        :src="imagenPokemon"
+        :alt="poke.name"
+        :class="{ descubierto: descubierto }"
+      />
       <form v-if="!descubierto" @submit.prevent="handleSubmit">
         <input v-model="namePoke" type="text" />
         <button>Descubrir</button>
@@ -27,19 +31,22 @@ export default {
   computed: {
     imagenPokemon() {
       // Verificar si la ruta a la imagen oficial está disponible
-      return this.poke.sprites.other?.["official-artwork"]?.front_default || this.poke.sprites.front_default;
-    }
+      return (
+        this.poke.sprites.other?.["official-artwork"]?.front_default ||
+        this.poke.sprites.front_default
+      );
+    },
   },
   methods: {
     handleSubmit() {
       if (this.namePoke.toLowerCase() === this.poke.name.toLowerCase()) {
         this.descubierto = true;
-        this.$emit('pokemon-descubierto');
+        this.$emit("pokemon-descubierto");
       } else {
         alert("Nombre incorrecto, intenta de nuevo.");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -58,13 +65,11 @@ export default {
 
 .carta-pokemon:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .pokemon-imagen {
   padding: 10px;
-  
-
 }
 
 img {
