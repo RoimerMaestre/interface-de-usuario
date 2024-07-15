@@ -30,6 +30,7 @@ Permitir al usuario adivinar el nombre del Pokémon.</li>
 
 Este es el componente principal que se encarga de obtener la lista de Pokémon de la API y manejar el contador de Pokémon descubiertos.
 
+
 ### Métodos
 
 getPokemon(): Realiza una llamada a la API de Pokémon para obtener la lista de Pokémon.
@@ -37,7 +38,10 @@ incrementarContador(): Incrementa el contador de Pokémon descubiertos cuando se
 CartaPokemon.vue
 Este componente representa una carta de Pokémon individual.
 
-## Props
+## CartaPokemon.vue
+Este componente representa una carta de Pokémon individual.
+
+### Props
 
  <ul>
 <li>poke: Un objeto que contiene la información del Pokémon.</li>
