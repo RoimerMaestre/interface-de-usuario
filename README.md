@@ -26,7 +26,7 @@ Permitir al usuario adivinar el nombre del Pokémon.</li>
 
 ## Componentes
 
-### App.vue
+## App.vue
 
 Este es el componente principal que se encarga de obtener la lista de Pokémon de la API y manejar el contador de Pokémon descubiertos.
 
